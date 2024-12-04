@@ -1,0 +1,28 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Project specific
+data/
+*.xlsx
+.vercel
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System specific
+.DS_Store
+Thumbs.db
+
+# Local development
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
