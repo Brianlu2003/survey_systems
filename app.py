@@ -13,10 +13,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'fallback_secret_key')
 csrf = CSRFProtect(app)
 
-# 使用环境变量或默认路径
+
 data_file = os.environ.get('DATA_FILE', '/tmp/survey_data.xlsx')
 
-# 确保数据文件存在
+
 if not os.path.exists(os.path.dirname(data_file)):
     os.makedirs(os.path.dirname(data_file))
 
